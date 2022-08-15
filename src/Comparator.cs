@@ -1,4 +1,3 @@
-
 enum ComparisonState
 {
     EQUAL = 0,
