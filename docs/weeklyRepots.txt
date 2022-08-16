@@ -1,0 +1,12 @@
+KW 33
+
+Gemacht:
+- basic http request
+- basic parser
+
+Probleme:
+- Settings design
+
+Nächste Woche
+- Settings
+- GUI

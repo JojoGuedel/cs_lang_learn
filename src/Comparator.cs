@@ -75,7 +75,7 @@ class WordExpression
 
         for (int i = 0; i < expression.Length; i++)
             Word.Add(new CharExpression(expression[i]));
-        
+
         IsOptional = isOptional;
     }
 
@@ -84,4 +84,49 @@ class WordExpression
         Word = expression;
         IsOptional = isOptional;
     }
+}
+
+class MetaGenerator
+{
+
+}
+
+class MetaToken
+{
+
+}
+
+abstract class Settings 
+{
+    public abstract void Restore();
+
+    public abstract void Load();
+    public abstract void Save();
+}
+
+class MetaComparator
+{
+    ExpressionMetaToken Expression1;
+    ExpressionMetaToken Expression2;
+
+    public MetaComparator(ExpressionMetaToken expression1, ExpressionMetaToken expression2)
+    {
+        Expression1 = expression1;
+        Expression2 = expression2;
+    }
+
+    public void Compare()
+    {
+
+    }
+}
+
+class ExpressionMetaToken
+{
+    List<WordMetaToken> Words;
+}
+
+class WordMetaToken
+{
+
 }
