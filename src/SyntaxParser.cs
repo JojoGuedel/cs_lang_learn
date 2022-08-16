@@ -1,13 +1,13 @@
 enum SyntaxTokenKind
 {
     InvalidExpression,
-    WordExpression,
+    CharExpression,
 
-    Dash,
+    DashSeparator,
+    DotSeparator,
 
     WhiteSpaceSeparator,
     CommaSeparator,
-    DotSeparator,
     SlashSeparator,
     SemiColonSeparator,
 
@@ -92,13 +92,7 @@ class SyntaxParser
             {
                 break;
             }
-            // Expressions
-            // TODO: change this to own check
-            else if (char.IsLetterOrDigit(current))
-            {
-                while (char.IsLetterOrDigit(Next()));
-
-                Tokens.Add(new SyntaxToken(SyntaxTokenKind.WordExpression, TextSpan.FromText(Text, start, Pos - start)));
+            Tokens.Add(new SyntaxToken(SyntaxTokenKind.WordExpression, TextSpan.FromText(Text, start, Pos - start)));
             }
 
             // separators
@@ -117,6 +111,11 @@ class SyntaxParser
             else if (current == ';')
             {
                 Tokens.Add(new SyntaxToken(SyntaxTokenKind.SemiColonSeparator, new TextSpan(Next(), start, 1)));
+            }
+
+            else
+            {
+
             }
         }
     }
