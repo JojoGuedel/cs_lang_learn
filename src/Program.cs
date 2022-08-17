@@ -14,6 +14,7 @@ static class Program {
 
         ScreenContainer topBar = new ScreenContainer(0, 0, screen.Width, 1);
         topBar.Content.SetColor(ConsoleColor.White, ConsoleColor.DarkCyan);
+        topBar.Content.SetText("Home Screen", ScreenTextAlign.CENTER);
         HomeScreen.Add(topBar);
 
         screen.SetContainerCollection(HomeScreen);

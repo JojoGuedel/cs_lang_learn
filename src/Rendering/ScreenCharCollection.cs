@@ -1,7 +1,14 @@
 using System;
 
+enum ScreenTextAlign {
+    LEFT,
+    RIGHT,
+    CENTER,
+}
+
 class ScreenCharCollection 
 {
+    // TODO: make this into a interface
     public delegate void DOnChanged();
     public event DOnChanged? OnChanged;
 
@@ -29,6 +36,23 @@ class ScreenCharCollection
             Content[i] = new ScreenChar();
     }
 
+    public void SetText(string text, ScreenTextAlign textAlgin = ScreenTextAlign.LEFT) 
+    {
+        int start = 0;
+
+        switch (textAlgin)
+        {
+            case ScreenTextAlign.LEFT: start = 0; break;
+            case ScreenTextAlign.CENTER: start = Size / 2 - text.Length / 2; break;
+            case ScreenTextAlign.RIGHT: start = Size - text.Length; break;
+        }
+
+        for (int i = 0; i < text.Length; i++)
+            Content[start + i].Char = text[i];
+        
+        OnChanged?.Invoke();
+    }
+
     public void SetColor(ConsoleColor color, ConsoleColor backgroundColor) 
     {
         for (int i = 0; i < Size; i++)
@@ -36,5 +60,7 @@ class ScreenCharCollection
             Content[i].Color = color;
             Content[i].BackgroundColor = backgroundColor;
         }
+
+        OnChanged?.Invoke();
     }
 }

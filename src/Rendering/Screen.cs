@@ -13,7 +13,7 @@ class Screen
         ContainerCollection = new List<ScreenContainer>();
         
         // TODO: Make this as setting
-        SetConsoleSize(120, 40);
+        SetConsoleSize(120, 30);
 
         Console.CursorVisible = false;
         Console.Clear();

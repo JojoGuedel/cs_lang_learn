@@ -2,7 +2,7 @@ using System;
 
 class ScreenChar
 {
-    public char Char { get; private set; }
+    public char Char { get; set; }
     public bool Inverted { get; private set; }
 
     public ConsoleColor Color { get; set; }
