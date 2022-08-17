@@ -1,15 +1,22 @@
-﻿static class Program {
+﻿using System;
+using System.Collections.Generic;
+
+static class Program {
     static void Main() {
         // QuizletParser quizletParser = new QuizletParser("https://quizlet.com/ch/709980296/chapitre-13-flash-cards/");
         // quizletParser.request_data().Wait();
         // quizletParser.parse();
 
-        SyntaxParser parser = new SyntaxParser("test / ; ");
-        parser.Lex();
+        Screen screen = new Screen();
 
-        foreach(SyntaxToken token in parser.Tokens) {
-            Console.WriteLine($"{token.Kind}: '{token.Span.Text}'");
-        }
+        List<ScreenContainer> HomeScreen = new List<ScreenContainer>();
+
+
+        ScreenContainer topBar = new ScreenContainer(0, 0, screen.Width, 1);
+        topBar.Content.SetColor(ConsoleColor.White, ConsoleColor.DarkCyan);
+        HomeScreen.Add(topBar);
+
+        screen.SetContainerCollection(HomeScreen);
 
         Console.ReadKey(true);
     }

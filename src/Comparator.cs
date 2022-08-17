@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 enum ComparisonState
 {
     EQUAL = 0,

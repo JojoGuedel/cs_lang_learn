@@ -1,4 +1,20 @@
-KW 33
+---------------------------------------------------------KW 33---------------------------------------------------------
+Da Quizlet beschlossen hat, kapitalistischen Interessen nachzugehen,
+habe ich mich entschlossen, den kostenpflichtigen Lernmodus in einem Konsolenprogramm wieder kostenfrei zu machen.
+
+In dieser Woche habe ich einen einfachen "HTML-Parser" gemacht, der aus dem html-Code von Quizlet die Begriffe parsen kann.
+Zudem habe ich ein kleiner Parser geschrieben, der die Begriffe parsen kann.
+Das wird später nützlich, da ich vorhabe, mithilfe von "Metadaten" verschiedene Lern-Modi zu machen.
+Je besser mein Programm die Begriffe versteht, desto bessere Lern-Modi kann ich kreieren.
+
+Als nächstes möchte ich Settings implementieren.
+Das Programm soll sehr personalisierbar sein, damit man beim Lernen am meisten profitieren kann.
+Dazu gehört auch später ein Serializer / Deserializer, den ich auch für das Speichern von Lernfortschritten benutzen möchte.
+
+Danach muss ich noch eine geeignete "Internal-Representation" konzipieren,
+damit ich auf eine einfache Art und Weise auf die vorhin erwähnten Metadaten zugreifen kann.
+---------------------------------------------------------KW 33---------------------------------------------------------
+
 
 Gemacht:
 - basic http request
@@ -9,4 +25,5 @@ Probleme:
 
 Nächste Woche
 - Settings
+- MetaTokens
 - GUI

@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 class SyntaxParser
 {
     string Text;
