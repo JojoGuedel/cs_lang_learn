@@ -7,17 +7,18 @@ static class Program {
         // quizletParser.request_data().Wait();
         // quizletParser.parse();
 
-        Screen screen = new Screen();
+        // Screen screen = new Screen();
+        // List<ScreenContainer1> HomeScreen = new List<ScreenContainer1>();
+        // ScreenContainer1 topBar = new ScreenContainer1(0, 0, screen.Width, 1);
+        // topBar.Content.SetColor(ConsoleColor.White, ConsoleColor.DarkCyan);
+        // topBar.Content.SetText("Home Screen", ScreenTextAlign.CENTER);
+        // HomeScreen.Add(topBar);
+        // screen.SetContainerCollection(HomeScreen);
 
-        List<ScreenContainer1> HomeScreen = new List<ScreenContainer1>();
+        ScreenContainer screen = new ScreenContainer();
+        ColumnContainer root = screen.AsColumnContainer();
 
-
-        ScreenContainer1 topBar = new ScreenContainer1(0, 0, screen.Width, 1);
-        topBar.Content.SetColor(ConsoleColor.White, ConsoleColor.DarkCyan);
-        topBar.Content.SetText("Home Screen", ScreenTextAlign.CENTER);
-        HomeScreen.Add(topBar);
-
-        screen.SetContainerCollection(HomeScreen);
+        screen.Render();
 
         Console.ReadKey(true);
     }
