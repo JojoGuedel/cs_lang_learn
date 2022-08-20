@@ -5,7 +5,7 @@ class RowContainer : ARowContainer
 {
     public List<ColumnContainer> columns;
 
-    public RowContainer(int height, AContainer parent) : base(height, parent)
+    public RowContainer(int height, AContainer1 parent) : base(height, parent)
     {
         columns = new List<ColumnContainer>();
     }

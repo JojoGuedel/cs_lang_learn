@@ -1,5 +1,3 @@
-using System;
-
 class TextBox
 {
     public int Width { get; private set; }

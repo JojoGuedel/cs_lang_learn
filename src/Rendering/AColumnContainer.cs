@@ -1,14 +1,14 @@
-abstract class AColumnContainer : AContainer
+abstract class AColumnContainer : AContainer1
 {
-    protected AContainer parent;
-    public override AContainer Parent => parent;
+    protected AContainer1 parent;
+    public override AContainer1 Parent => parent;
 
     int width;
 
     public override int Width => width;
     public override int Height => Parent.Height;
 
-    public AColumnContainer(int width, AContainer parent)
+    public AColumnContainer(int width, AContainer1 parent)
     {
         this.width = width;
         this.parent = parent;

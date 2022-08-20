@@ -15,32 +15,32 @@ static class Program {
         // HomeScreen.Add(topBar);
         // screen.SetContainerCollection(HomeScreen);
 
-        // ScreenContainer screen = new ScreenContainer();
-        // ColumnContainer root = screen.AsColumnContainer();
+        ScreenContainer screen = new ScreenContainer();
+        ColumnContainer root = screen.AsColumnContainer();
+        
+        screen.Render();
 
-        // screen.Render();
+        // TextBoxFormatOptions boxFormatOptions = new TextBoxFormatOptions();
 
-        TextBoxFormatOptions boxFormatOptions = new TextBoxFormatOptions();
+        // TextBox box = new TextBox(20, 10, boxFormatOptions);
 
-        TextBox box = new TextBox(20, 10, boxFormatOptions);
+        // box.Write("This");
+        // box.Write("is");
+        // box.Write("a");
+        // box.Write("loooooooooong");
+        // box.Write("test");
+        // box.Write("to");
+        // box.Write("see");
+        // box.Write("if");
+        // box.Write("it");
+        // box.Write("works");
 
-        box.Write("This");
-        box.Write("is");
-        box.Write("a");
-        box.Write("loooooooooong");
-        box.Write("test");
-        box.Write("to");
-        box.Write("see");
-        box.Write("if");
-        box.Write("it");
-        box.Write("works");
-
-        foreach (TextLine line in box.Lines)
-        {
-            Console.Write("|");
-            Console.Write(line.Text);
-            Console.WriteLine("|");
-        }
+        // foreach (TextLine line in box.Lines)
+        // {
+        //     Console.Write("|");
+        //     Console.Write(line.Text);
+        //     Console.WriteLine("|");
+        // }
 
         Console.ReadKey(true);
     }

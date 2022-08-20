@@ -2,7 +2,7 @@ using System;
 
 class TextRowContainer : ARowContainer
 {
-    public TextRowContainer(int height, AContainer parent) : base(height, parent)
+    public TextRowContainer(int height, AContainer1 parent) : base(height, parent)
     {
         throw new NotImplementedException();
     }

@@ -1,13 +1,13 @@
 using System;
 
-class ScreenContainer : AContainer
+class ScreenContainer : AContainer1
 {
-    public override AContainer Parent => throw new MemberAccessException("ScreenContainer does not have parents");
+    public override AContainer1 Parent => throw new MemberAccessException("ScreenContainer does not have parents");
 
     public override int Width => Console.BufferWidth;
     public override int Height => Console.BufferHeight;
 
-    public AContainer? Container { get; private set; }
+    public AContainer1? Container { get; private set; }
 
     public ColumnContainer AsColumnContainer() 
     {

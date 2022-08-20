@@ -2,9 +2,12 @@ using System;
 
 class TextColumnContainer : AColumnContainer
 {
-    public TextColumnContainer(int width, AContainer parent) : base(width, parent)
+    public TextBox TextBox { get; private set; }
+
+    public TextColumnContainer(int width, AContainer1 parent) : this(width, parent, new TextBoxFormatOptions()) {}
+    public TextColumnContainer(int width, AContainer1 parent, TextBoxFormatOptions formatOptions) : base(width, parent)
     {
-        throw new NotImplementedException();
+        TextBox = new TextBox(Width, Height, formatOptions);
     }
 
     public override void Render(int x, int y, int maxWidth, int maxHeight)
