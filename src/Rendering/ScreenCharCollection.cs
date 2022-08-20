@@ -1,67 +1,182 @@
 using System;
+using System.Collections.Generic;
 
-enum ScreenTextAlign {
-    LEFT,
-    RIGHT,
-    CENTER,
+enum TextOrientation
+{
+    LEFT_RIGHT,
+    RIGHT_LEFT,
+    TOP_DOWN,
+    DOWN_TOP,
 }
 
-// TODO: I don't think this class is necessary so...
-class ScreenCharCollection 
+enum HorizontalTextAlign
 {
-    // TODO: make this into a interface
-    public delegate void DOnChanged();
-    public event DOnChanged? OnChanged;
+    LEFT,
+    CENTER,
+    RIGHT,
+}
 
-    ScreenChar[] Content;
-    public int Size { get => Content.Length; }
+enum VerticalTextAlign
+{
+    TOP,
+    CENTER,
+    BOTTOM,
+}
 
-    public ScreenChar this[int index]
+class ScreenWord : IAppearanceModifier
+{
+    public List<ScreenChar> Chars { get; private set; }
+
+    public ScreenWord(List<ScreenChar> chars)
     {
-        get => Content[index];
-        set 
-        { 
-            if (Content[index].Equals(value))
+        Chars = chars;
+    }
+
+    public void InvertColor()
+    {
+        foreach (ScreenChar c in Chars)
+            c.InvertColor();
+    }
+
+    public void SetColor(ConsoleColor foregroundColor, ConsoleColor backgroundColor)
+    {
+        foreach (ScreenChar c in Chars)
+            c.SetColor(foregroundColor, backgroundColor);
+    }
+}
+
+class ScreenText : IAppearanceModifier
+{
+    public List<ScreenWord> Words { get; private set; }
+
+    public ScreenText(List<ScreenWord> words)
+    {
+
+    }
+
+    public void InvertColor()
+    {
+        foreach (ScreenWord word in Words)
+            word.InvertColor();
+    }
+
+    public void SetColor(ConsoleColor foregroundColor, ConsoleColor backgroundColor)
+    {
+        foreach (ScreenWord word in Words)
+            word.SetColor(foregroundColor, backgroundColor);
+    }
+}
+
+class TextBox1
+{
+    int Width;
+    int Height;
+
+    ScreenChar[] ScreenBuffer;
+
+    ScreenText text;
+    ScreenText Text
+    {
+        get => text;
+        set
+        {
+            text = value;
+            UpdateBuffer();
+        }
+    }
+
+    public TextBox1(int width, int height)
+    {
+        Width = width;
+        Height = height;
+
+        ScreenBuffer = new ScreenChar[Width * Height];
+
+    }
+
+    int IX(int x, int y)
+    {
+        return x + y * Width;
+    }
+
+    void UpdateBuffer()
+    {
+        List<List<ScreenChar>> Words = new List<List<ScreenChar>>();
+
+        ScreenChar[] buffer = new ScreenChar[Width * Height];
+
+        int lineWidth, lineCount;
+
+        int lineCursor = 0;
+
+
+
+
+
+    }
+
+    void Render(int x, int y, int maxWidth, int maxHeight)
+    {
+        for (int _y = 0; _y < Height; y++)
+        {
+            if (y + _y > maxHeight)
                 return;
-            
-            Content[index] = value.Copy();
-            OnChanged?.Invoke();
+
+            if (y + _y < 0)
+                continue;
+
+            Console.SetCursorPosition(x, y + _y);
+
+            for (int _x = 0; _x < Width; _x++)
+            {
+                if (x + _x > maxWidth)
+                    break;
+
+                if (x + _x < 0)
+                    continue;
+
+                ScreenBuffer[IX(_x, _y)].Write();
+            }
         }
     }
+}
 
-    public ScreenCharCollection(int size)
+class TextBoxFormatter
+{
+    public string[] Words { get; }
+    public int Width { get; }
+    public int Height { get; }
+
+    List<string>[] LineBuffer;
+
+    public TextBoxFormatter(string[] words, int width, int height)
     {
-        Content = new ScreenChar[size];
+        Words = words;
 
-        for (int i = 0; i < size; i++)
-            Content[i] = new ScreenChar();
+        Width = width;
+        Height = height;
+
+
+        LineBuffer = new List<string>[Height];
+        for (int i = 0; i < LineBuffer.Length; i++)
+            LineBuffer[i] = new List<string>();
     }
 
-    public void SetText(string text, ScreenTextAlign textAlgin = ScreenTextAlign.LEFT) 
+    public void Format()
     {
-        int start = 0;
-
-        switch (textAlgin)
+        for (int i = 0; i < LineBuffer.Length; i++)
         {
-            case ScreenTextAlign.LEFT: start = 0; break;
-            case ScreenTextAlign.CENTER: start = Size / 2 - text.Length / 2; break;
-            case ScreenTextAlign.RIGHT: start = Size - text.Length; break;
         }
-
-        for (int i = 0; i < text.Length; i++)
-            Content[start + i].Char = text[i];
-        
-        OnChanged?.Invoke();
     }
 
-    public void SetColor(ConsoleColor color, ConsoleColor backgroundColor) 
-    {
-        for (int i = 0; i < Size; i++)
-        {
-            Content[i].Color = color;
-            Content[i].BackgroundColor = backgroundColor;
-        }
+    
 
-        OnChanged?.Invoke();
+    public void SetHorizontalAlign(HorizontalTextAlign align)
+    {
+    }
+
+    public void SetVerticalAlign(VerticalTextAlign align)
+    {
+
     }
 }

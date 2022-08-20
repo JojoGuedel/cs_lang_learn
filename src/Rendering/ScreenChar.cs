@@ -1,52 +1,29 @@
 using System;
 
-class ScreenChar
+struct ScreenChar : IAppearanceModifier
 {
-    public char Char { get; set; }
+    char Char;
 
-    public ConsoleColor Color { get; set; }
-    public ConsoleColor BackgroundColor { get; set; }
+    ConsoleColor ForegroundColor;
+    ConsoleColor BackgroundColor;
 
-    public ScreenChar(char c = ' ')
+    public void InvertColor()
     {
-        Char = c;
-
-        // TODO: Make this a setting
-        Color = ConsoleColor.White;
-        BackgroundColor = ConsoleColor.Black;
+        ConsoleColor temp = ForegroundColor;
+        ForegroundColor = BackgroundColor;
+        BackgroundColor = temp;
     }
 
-    public bool Equals(ScreenChar other)
+    public void SetColor(ConsoleColor foregroundColor, ConsoleColor backgroundColor)
     {
-        return (
-            Char == other.Char &&
-            Color == other.Color &&
-            BackgroundColor == other.BackgroundColor
-        );
+        ForegroundColor = foregroundColor;
+        BackgroundColor = backgroundColor;
     }
 
-    public ScreenChar Copy() 
+    public void Write()
     {
-        ScreenChar c = new ScreenChar(Char);
-        c.Color = Color;
-        c.BackgroundColor = BackgroundColor;
-
-        return c;
-    }
-
-    public void Write() => Write(false);
-    public void Write(bool Inverted) 
-    {
-        if (Inverted) 
-        {
-            Console.ForegroundColor = BackgroundColor;
-            Console.BackgroundColor = Color;
-        }
-        else
-        {
-            Console.ForegroundColor = Color;
-            Console.BackgroundColor = BackgroundColor;
-        }
+        Console.ForegroundColor = ForegroundColor;
+        Console.BackgroundColor = BackgroundColor;
 
         Console.Write(Char);
     }
