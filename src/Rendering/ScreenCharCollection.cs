@@ -6,6 +6,7 @@ enum ScreenTextAlign {
     CENTER,
 }
 
+// TODO: I don't think this class is necessary so...
 class ScreenCharCollection 
 {
     // TODO: make this into a interface

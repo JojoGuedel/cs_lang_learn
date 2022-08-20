@@ -6,11 +6,11 @@ class Screen
     public int Width { get => Console.BufferWidth; }
     public int Height { get => Console.BufferHeight; }
 
-    List<ScreenContainer> ContainerCollection;
+    List<ScreenContainer1> ContainerCollection;
 
     public Screen()
     {
-        ContainerCollection = new List<ScreenContainer>();
+        ContainerCollection = new List<ScreenContainer1>();
         
         // TODO: Make this as setting
         SetConsoleSize(120, 30);
@@ -19,11 +19,11 @@ class Screen
         Console.Clear();
     }
 
-    public void SetContainerCollection(List<ScreenContainer> collection) 
+    public void SetContainerCollection(List<ScreenContainer1> collection) 
     {
         ContainerCollection = collection;
         
-        foreach (ScreenContainer sc in ContainerCollection) {
+        foreach (ScreenContainer1 sc in ContainerCollection) {
             sc.OnChanged += OnScreenContainerChanged;
             RedrawScreenContainer(sc);
         }
@@ -31,13 +31,13 @@ class Screen
 
     public void ClearContainerCollection() 
     {
-        foreach (ScreenContainer sc in ContainerCollection)
+        foreach (ScreenContainer1 sc in ContainerCollection)
             sc.OnChanged -= OnScreenContainerChanged;
         
-        ContainerCollection = new List<ScreenContainer>();
+        ContainerCollection = new List<ScreenContainer1>();
     }
 
-    void RedrawScreenContainer(ScreenContainer container)
+    void RedrawScreenContainer(ScreenContainer1 container)
     {
         for (int y = 0; y < container.Height; y++)
         {
@@ -52,24 +52,16 @@ class Screen
                     break;
 
                 ScreenChar screenChar = container.Content[x + y * container.Width];
-
-                if (screenChar.Inverted)
-                {
-                    Console.ForegroundColor = screenChar.BackgroundColor;
-                    Console.BackgroundColor = screenChar.Color;
-                }
-                else
-                {
-                    Console.ForegroundColor = screenChar.Color;
-                    Console.BackgroundColor = screenChar.BackgroundColor;
-                }
+                
+                Console.ForegroundColor = screenChar.Color;
+                Console.BackgroundColor = screenChar.BackgroundColor;
 
                 Console.Write(screenChar.Char);
             }
         }
     }
 
-    void OnScreenContainerChanged(ScreenContainer container)
+    void OnScreenContainerChanged(ScreenContainer1 container)
     {
         RedrawScreenContainer(container);
     }

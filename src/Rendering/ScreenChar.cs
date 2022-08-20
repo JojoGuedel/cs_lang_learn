@@ -3,7 +3,6 @@ using System;
 class ScreenChar
 {
     public char Char { get; set; }
-    public bool Inverted { get; private set; }
 
     public ConsoleColor Color { get; set; }
     public ConsoleColor BackgroundColor { get; set; }
@@ -33,5 +32,22 @@ class ScreenChar
         c.BackgroundColor = BackgroundColor;
 
         return c;
+    }
+
+    public void Write() => Write(false);
+    public void Write(bool Inverted) 
+    {
+        if (Inverted) 
+        {
+            Console.ForegroundColor = BackgroundColor;
+            Console.BackgroundColor = Color;
+        }
+        else
+        {
+            Console.ForegroundColor = Color;
+            Console.BackgroundColor = BackgroundColor;
+        }
+
+        Console.Write(Char);
     }
 }

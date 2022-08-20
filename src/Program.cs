@@ -9,10 +9,10 @@ static class Program {
 
         Screen screen = new Screen();
 
-        List<ScreenContainer> HomeScreen = new List<ScreenContainer>();
+        List<ScreenContainer1> HomeScreen = new List<ScreenContainer1>();
 
 
-        ScreenContainer topBar = new ScreenContainer(0, 0, screen.Width, 1);
+        ScreenContainer1 topBar = new ScreenContainer1(0, 0, screen.Width, 1);
         topBar.Content.SetColor(ConsoleColor.White, ConsoleColor.DarkCyan);
         topBar.Content.SetText("Home Screen", ScreenTextAlign.CENTER);
         HomeScreen.Add(topBar);
