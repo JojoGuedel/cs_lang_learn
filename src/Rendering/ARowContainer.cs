@@ -10,7 +10,7 @@ abstract class ARowContainer : AContainer
 
     public ARowContainer(int height, AContainer parent)
     {
-        this.parent = Parent;
         this.height = height;
+        this.parent = Parent;
     }
 }
