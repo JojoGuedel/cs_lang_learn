@@ -27,4 +27,13 @@ struct ScreenChar : IAppearanceModifier
 
         Console.Write(Char);
     }
+
+    public ScreenChar(char c) : this(c, ConsoleColor.White, ConsoleColor.Black) {}
+
+    public ScreenChar(char c, ConsoleColor foregroundColor, ConsoleColor backgroundColor)
+    {
+        Char = c;
+        ForegroundColor = foregroundColor;
+        BackgroundColor = backgroundColor;
+    }
 }

@@ -14,34 +14,22 @@ static class Program {
         // topBar.Content.SetText("Home Screen", ScreenTextAlign.CENTER);
         // HomeScreen.Add(topBar);
         // screen.SetContainerCollection(HomeScreen);
-
-        ScreenContainer screen = new ScreenContainer();
-        ColumnContainer root = screen.AsColumnContainer();
         
+        Console.SetBufferSize(120, 40);
+
+        ScreenContainer screen = new ScreenContainer(120, 30, ContainerGrowDirection.LR);
+        LayoutContainer a = screen.AddLayoutContainer(20);
+        
+        TextContainer textBox = a.AddTextContainer(4);
+        textBox.TextBox.Write("Hey,");
+        textBox.TextBox.Write("this");
+        textBox.TextBox.Write("is");
+        textBox.TextBox.Write("a");
+        textBox.TextBox.Write("looooooooooooooooooooong");
+        textBox.TextBox.Write("text");
+
         screen.Render();
-
-        // TextBoxFormatOptions boxFormatOptions = new TextBoxFormatOptions();
-
-        // TextBox box = new TextBox(20, 10, boxFormatOptions);
-
-        // box.Write("This");
-        // box.Write("is");
-        // box.Write("a");
-        // box.Write("loooooooooong");
-        // box.Write("test");
-        // box.Write("to");
-        // box.Write("see");
-        // box.Write("if");
-        // box.Write("it");
-        // box.Write("works");
-
-        // foreach (TextLine line in box.Lines)
-        // {
-        //     Console.Write("|");
-        //     Console.Write(line.Text);
-        //     Console.WriteLine("|");
-        // }
-
+        
         Console.ReadKey(true);
     }
 }

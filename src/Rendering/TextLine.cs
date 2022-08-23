@@ -96,11 +96,3 @@ class TextLine
             text[cursorPos] = '.';
     }
 }
-
-struct TextBoxFormatOptions
-{
-    public HorizontalTextAlign HorizontalAlign { get; private set; }
-    public VerticalTextAlign VerticalAlign { get; private set; }
-
-    public TextWrap TextWrap { get; private set; }
-}

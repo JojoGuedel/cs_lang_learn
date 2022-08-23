@@ -1,24 +1,33 @@
 using System;
+using System.Collections.Generic;
 
-class ScreenContainer : AContainer1
+class ScreenContainer : ALayoutContainer
 {
-    public override AContainer1 Parent => throw new MemberAccessException("ScreenContainer does not have parents");
+    List<AContainer> children;
+    public override List<AContainer> Children => children;
 
-    public override int Width => Console.BufferWidth;
-    public override int Height => Console.BufferHeight;
+    ContainerGrowDirection growDirection;
+    public override ContainerGrowDirection GrowDirection => growDirection;
 
-    public AContainer1? Container { get; private set; }
+    int width;
+    int height;
 
-    public ColumnContainer AsColumnContainer() 
+    public override int Width => width;
+    public override int Height => height;
+
+    public override AContainer Parent => throw new MemberAccessException("ScreenContainer does not have parents.");
+
+    public ScreenContainer(int width, int height, ContainerGrowDirection growDirection)
     {
-        ColumnContainer column = new ColumnContainer(Height, this);
-        Container = column;
-        return column;
+        this.width = width;
+        this.height = height;
+
+        children = new List<AContainer>();
+        this.growDirection = growDirection;
     }
 
-    // TODO: set ConsoleBuffer
-    public override void Render(int x = 0, int y = 0, int maxWidth = -1, int maxHeight = -1)
+    public void Render()
     {
-        Container?.Render(x, y, Width - x, Height - y);
+        this.Render(0, 0, Width, Height);
     }
 }

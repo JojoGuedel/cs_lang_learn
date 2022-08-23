@@ -18,6 +18,5 @@ enum SyntaxTokenKind
     LeftCurlyParen,
     RightCurlyParen,
     LeftAngleParen,
-    RightAngleParen,
-
+    RightAngleParen,m
 }
