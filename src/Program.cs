@@ -11,8 +11,7 @@ static class Program
         // quizletParser.request_data().Wait();
         // quizletParser.parse();
 
-        Application.Init();
-        Application.LoadStartMenu();
+        Application.LoadView(new MainMenu());
         Application.Run();
 
         // ScreenContainer screen = new ScreenContainer(120, 30, ContainerGrowDirection.TB);

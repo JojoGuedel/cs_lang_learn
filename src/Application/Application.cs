@@ -4,17 +4,15 @@ static class Application
 {
     static ScreenContainer screen;
 
-    static TextContainer topBarTitle;
-    static LayoutContainer topBar;
-    static LayoutContainer floorBar;
-
-    static LayoutContainer body;
+    static View currentView;
+    static DefaultView defaultView;
 
     static ConsoleKeyInfo lastKey;
+    public static ConsoleKeyInfo LastKey { get => lastKey; }
 
     static bool active;
 
-    public static void Init()
+    static Application()
     {
         const int width = 120;
         const int height = 30;
@@ -24,37 +22,42 @@ static class Application
 
         screen = new ScreenContainer(width, height, ContainerGrowDirection.TB);
 
-        topBar = screen.AddLayoutContainer(1);
-        body = screen.AddLayoutContainer(width - 2);
-        floorBar = screen.AddLayoutContainer(1);
-
-        topBarTitle = topBar.AddTextContainer(30);
+        defaultView = new DefaultView();
+        defaultView.Load(screen);
+        currentView = defaultView;
     }
 
-    public static void LoadStartMenu()
+    public static void LoadView(View view)
     {
-        topBarTitle.TextBox.Write("Start Menu");
-        LayoutContainer menu = body.AddLayoutContainer(30);
+        defaultView.TopBarTitle.TextBox.Clear();
+        defaultView.TopBarTitle.TextBox.Write(view.Title);
 
-        TextContainer Practice = menu.AddTextContainer(1);
-        Practice.TextBox.Write("Practice");
 
-        TextContainer Edit = menu.AddTextContainer(1);
-        Edit.TextBox.Write("Edit");
+        currentView.IsCurrentView = false;
+        view.LastView = currentView;
+        currentView = view;
+        currentView.IsCurrentView = true;
 
-        TextContainer Download = menu.AddTextContainer(1);
-        Download.TextBox.Write("Download");
+        defaultView.Body.ClearChildren();
+        currentView.Load(defaultView.Body);
+        
+        screen.Render();
+    }
 
-        TextContainer Settings = menu.AddTextContainer(1);
-        Settings.TextBox.Write("Settings");
+    public static void ExitView()
+    {
+        defaultView.TopBarTitle.TextBox.Clear();
+        defaultView.TopBarTitle.TextBox.Write(currentView.Title);
 
-        TextContainer Exit = menu.AddTextContainer(1);
-        Exit.TextBox.Write("Exit");
-        Exit.OnUpdate += ExitKeyUpdateCB;
+        currentView.Exit();
+        currentView.IsCurrentView = false;
+        currentView = currentView.LastView;
+        currentView.IsCurrentView = true;
 
-        menu.IsSelected = true;
-        Practice.IsSelected = true;
+        defaultView.Body.ClearChildren();
+        currentView.Load(defaultView.Body);
 
+        
         screen.Render();
     }
 
@@ -102,15 +105,9 @@ static class Application
         }
     }
 
-    static void ExitKeyUpdateCB(AContainer sender)
-    {
-        if (sender.IsSelected && lastKey.Key == ConsoleKey.Enter)
-            InvokeExit();
-    }
-
     public static void InvokeCursorUpdate(CursorDirection direction)
     {
-        body.UpdateCursor(direction);
+        defaultView.Body.UpdateCursor(direction);
         screen.Render();
     }
 

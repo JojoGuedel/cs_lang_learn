@@ -32,7 +32,7 @@ abstract class ALayoutContainer : AContainer
         return textContainer;
     }
 
-    public void ResetChildren()
+    public void ClearChildren()
     {
         Children.Clear();
     }
@@ -57,7 +57,7 @@ abstract class ALayoutContainer : AContainer
     {
         InvokeUpdate();
 
-        foreach (AContainer child in Children)
+        foreach (AContainer child in Children.ToArray())
             child.Update();
     }
 

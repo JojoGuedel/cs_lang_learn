@@ -19,12 +19,7 @@ class TextBox
 
         this.formatOptions = formatOptions;
 
-        lines = new TextLine[Height];
-        for (int i = 0; i < lines.Length; i++)
-            lines[i] = new TextLine(
-                            Width,
-                            i == lines.Length -1? TextWrap.DOTS : formatOptions.TextWrap,
-                            formatOptions.HorizontalAlign);
+        Clear();
     }
 
     public string Write(string word, bool whitespace = true) 
@@ -38,6 +33,16 @@ class TextBox
         }
 
         return word;
+    }
+
+    public void Clear()
+    {
+        lines = new TextLine[Height];
+        for (int i = 0; i < lines.Length; i++)
+            lines[i] = new TextLine(
+                            Width,
+                            i == lines.Length -1? TextWrap.DOTS : formatOptions.TextWrap,
+                            formatOptions.HorizontalAlign);
     }
 
     public TextLine[] Align()

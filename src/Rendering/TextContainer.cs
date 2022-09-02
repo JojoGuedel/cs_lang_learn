@@ -40,7 +40,7 @@ class TextContainer : AContainer
             Console.BackgroundColor = temp;
         }
 
-        for (int _y = 0; _y < lines.Length && y + y < maxHeight; _y++)
+        for (int _y = 0; _y < lines.Length && y + _y < maxHeight; _y++)
         {
             Console.SetCursorPosition(x, y + _y);
             Console.Write(lines[_y].Text);
