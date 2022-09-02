@@ -1,0 +1,1354 @@
+name = "en_1"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to expand one's knowledge"
+language = "lang-en"
+[cards.expr2]
+visited = 1
+correct = 1
+content = "sein Wissen erweitern"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to have a thorough knowledge of sth."
+language = "lang-en"
+[cards.expr2]
+visited = 1
+correct = 0
+content = "ein fundiertes Wissen über etw. besitzen"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "a wealth of knowledge"
+language = "lang-en"
+[cards.expr2]
+visited = 1
+correct = 0
+content = "Wissenschatz"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to know sth. inside out"
+language = "lang-en"
+[cards.expr2]
+visited = 1
+correct = 1
+content = "etw. bis ins kleinste Detail kennen"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to be knowledgeable about sth."
+language = "lang-en"
+[cards.expr2]
+visited = 1
+correct = 1
+content = "sehr bewandert in etw. sein"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to do an exam"
+language = "lang-en"
+[cards.expr2]
+visited = 1
+correct = 0
+content = "eine Prüfung ablegen"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to sit an exam"
+language = "lang-en"
+[cards.expr2]
+visited = 1
+correct = 1
+content = "eine Prüfung ablegen"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to get a qualification"
+language = "lang-en"
+[cards.expr2]
+visited = 1
+correct = 0
+content = "eine Qualifikation erwerben"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to obtain a qualification"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "eine Qualifikation erwerben"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to go to a lecture"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "eine Vorlesung besuchen"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to attend a lecture"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "eine Vorlesung besuchen"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to do a subject"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "etw. studieren"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to study a subject"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "etw. studieren"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "like-minded people"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Gleichgesinnte"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to be in full-time employment"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "vollzeitbeschäftigt sein"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to pursue learning"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Bildung nachgehen"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to follow a curriculum"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "einem Lehrplan folgen"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to come from all walks of life"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "aus allen Gesellschaftsschichten stammen"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "caring professions"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Sozialberufe"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to run a course"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "einen Kurs anbieten"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "on a regular basis"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "regelmässig"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to be all about sth"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "um etw. gehen"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "a means to an end"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "ein Mittel zum Zweck"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to be on offer"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "im Angebot sein"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "used to"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "früher"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "Did you use to work here?"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Hast du früher hier gearbeitet?"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "an academic"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "ein/e Akademiker/in"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "a scholar"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "ein/e Gelehrte/r"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "a scientist"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "ein/e Naturwissenschaftler/in"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to get a mark"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "eine Note bekommen"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to get a grade"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "eine Note bekommen"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to go to press"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "in Druck gehen"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "hot off the press"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "druckfrisch"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to leak sth to the press"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "etw der Presse zuspielen"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to inform the press"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "etw der Presse zuspielen"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to break"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "ans Llicht kommen, bekannt werden"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to hit the headlines"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Schlagzeilen machen"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "in-depth coverage"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "gründliche Berichterstattung"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to receive a lot of media coverage"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "ein grosses Medienecho erhalten"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "front page"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "erste Seite, Titelseite"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "news broadcast"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Nachrichtensendung"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to run a story"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "über etw. berichten"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to have access to sth."
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "auf etw. zugreifen"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to give prominence to sth."
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "etw. in den Vordergrund stellen"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "up-to-the-minute"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "allerneuste, topaktuell"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to carry weight"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Bedeutung haben"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "it's all the same to me"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "das mcht für mich keinen Unterschied"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "muck-raking"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Sensationsjournalismus"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "near miss"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "eine knappe Sache"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "eyewitness report"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Augenzeugenbericht"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to issue a statement"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "eine Stellungnahme abgeben"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to issue a press release"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "eine Pressemeldung herausgeben"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "full investigation"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "eine umfassende Untersuchung"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to conduct an investigation"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "eine Untersuchung durchführen"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "the silly season"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "die Saure-Gurken-Zeit, das Sommerloch"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to blow sth out of proportion"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "etw. masslos übertreiben"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to be in recess"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "in der Sommerpause sein"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "up-to-date"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "aktuell"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "latest"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "neueste"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "passer-by"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Passant/in"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to assess"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "beurteilen, abschätzen"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to assume"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "annehmen"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to baffle"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "verdutzen"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "biased"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "voreingenommen"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to concentrate"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "konzentrieren"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to consider"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "bedenken, berücksichtigen"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to contemplate"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "nachdenken, erwägen"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "cynical"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "zynisch"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to deduce"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "folgern"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to deliberate"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "etw bedenken"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "dilemma"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Dilemma"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to discriminate"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "diskriminieren"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "dubious"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "fragwürdig"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to estimate"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "schätzen"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "estimate"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Schätzung"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "faith"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Glaube"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to gather"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "sammeln, erheben"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "genius"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Genie"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to grasp"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "begreifen, fassen"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "guesswork"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Spekulation"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "hunch"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Ahnung, Vermutung"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "ideology"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Ideologie"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "ingenious"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "genial"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "inspiration"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Inspiration"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "intuition"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Intuition"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to justify"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "rechtfertigen"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "naïve"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "naiv"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "notion"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Vorstellung, Gedanke"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "optimistic"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "optimistisch"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "paradox"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Paradox"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "pessimistic"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "pessimistisch"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "plausible"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "plausibel"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to ponder"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "abwägen, grübeln"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "prejudiced"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "voreingenommen, befangen"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to presume"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "annehmen"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "query"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Anfrage, Erkundigung"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to reckon"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "meinen, glauben"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to reflect"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "nachdenken, widerspiegeln"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "sceptical/skeptical"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "skeptisch"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to speculate"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "spekulieren"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to suppose"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "vermuten"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "academic"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "akademisch, Akademiker/in"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "conscientious"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "gewissenhaft"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to cram"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "büffeln, pauken"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "curriculum"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Lehrplan"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "distance learning"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Fernunterricht"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to graduate"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "einen Schulabschluss machen"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "graduate"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Absolvent/in"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "ignorant"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "unwissend"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "inattentive"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "unaufmerksam"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "intellectual"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "intellektuell, Intellektuelle/r"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "intelligent"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "intelligent"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "intensive"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "intensiv"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "knowledgeable"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "sachkundig, bewandert"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "lecture"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Vorlesung, Standpauke"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "to lecture"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Vorlesung halten, belehren"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "mock exam"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Probeklausur"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "plagiarise"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "plagiieren"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "self-study"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Selbststudium"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "seminar"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Seminar"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "special needs"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "besondere Bedürfnisse"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "tuition"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Schulgeld"
+language = "lang-de"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "tutorial"
+language = "lang-en"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "Anleitung"
+language = "lang-de"

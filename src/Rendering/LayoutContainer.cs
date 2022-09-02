@@ -14,12 +14,12 @@ class LayoutContainer : ALayoutContainer
     public override int Width => width;
     public override int Height => height;
 
-    AContainer parent;
-    public override AContainer Parent => parent;
+    // AContainer parent;
+    // public override AContainer Parent => parent;
 
     public LayoutContainer(AContainer parent, int widthOrHeight, ContainerGrowDirection growDirection) 
     {
-        this.parent = parent;
+        // this.parent = parent;
 
         children = new List<AContainer>();
         this.growDirection = growDirection;
@@ -29,12 +29,12 @@ class LayoutContainer : ALayoutContainer
 
         if (growDirection == ContainerGrowDirection.LR)
         {
-            width = widthOrHeight;
+            height = widthOrHeight;
             childGrowDirection = ContainerGrowDirection.TB;
         }
         else if (growDirection == ContainerGrowDirection.TB)
         {
-            height = widthOrHeight;
+            width = widthOrHeight;
             childGrowDirection = ContainerGrowDirection.LR;
         }
     }

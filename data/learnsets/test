@@ -1,0 +1,23 @@
+name = "test"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "fett"
+language = "unknown"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "test_en"
+language = "unknown"
+[[cards]]
+[cards.expr1]
+visited = 0
+correct = 0
+content = "test_de"
+language = "unknown"
+[cards.expr2]
+visited = 0
+correct = 0
+content = "test_en"
+language = "unknown"

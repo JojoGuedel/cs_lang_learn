@@ -15,7 +15,7 @@ class ScreenContainer : ALayoutContainer
     public override int Width => width;
     public override int Height => height;
 
-    public override AContainer Parent => throw new MemberAccessException("ScreenContainer does not have parents.");
+    // public override AContainer Parent => throw new MemberAccessException("ScreenContainer does not have parents.");
 
     public ScreenContainer(int width, int height, ContainerGrowDirection growDirection)
     {

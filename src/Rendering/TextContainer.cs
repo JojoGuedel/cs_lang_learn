@@ -8,8 +8,11 @@ class TextContainer : AContainer
     public override int Width => width;
     public override int Height => height;
 
-    AContainer parent;
-    public override AContainer Parent => parent;
+    bool isSelected;
+    public override bool IsSelected { get => isSelected; set { if (value) Select(); else Deselect(); } }
+
+    // AContainer parent;
+    // public override AContainer Parent => parent;
 
     TextBox textBox;
     public TextBox TextBox => textBox;
@@ -17,7 +20,7 @@ class TextContainer : AContainer
 
     public TextContainer(AContainer parent, int width, int height)
     {
-        this.parent = parent;
+        // this.parent = parent;
 
         this.width = width;
         this.height = height;
@@ -29,10 +32,38 @@ class TextContainer : AContainer
     {   
         TextLine[] lines = textBox.Lines;
 
+        Console.ResetColor();
+        if (isSelected)
+        {
+            ConsoleColor temp = Console.ForegroundColor;
+            Console.ForegroundColor = Console.BackgroundColor;
+            Console.BackgroundColor = temp;
+        }
+
         for (int _y = 0; _y < lines.Length && y + y < maxHeight; _y++)
         {
-            Console.SetCursorPosition(x, _y);
+            Console.SetCursorPosition(x, y + _y);
             Console.Write(lines[_y].Text);
         }
+    }
+
+    public override void Update() 
+    {
+        InvokeUpdate();
+    }
+    
+    public override bool UpdateCursor(CursorDirection direction)
+    {
+        return false;
+    }
+
+    void Select()
+    {
+        isSelected = true;
+    }
+
+    void Deselect()
+    {
+        isSelected = false;
     }
 }

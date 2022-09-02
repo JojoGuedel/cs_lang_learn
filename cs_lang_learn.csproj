@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="tomlyn" Version="0.15.0" />
+  </ItemGroup>
+
 </Project>

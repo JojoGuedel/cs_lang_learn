@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 class QuizletParser {
     string url = string.Empty;
     string html = string.Empty;
-    List<PracticeCard> output = new List<PracticeCard>();
+
+    PracticeSetModel output = new PracticeSetModel();
+    public PracticeSetModel Output { get => output; }
 
     public QuizletParser(string url) {
         // TODO: Check if url is actually from Quizlet
@@ -37,38 +39,45 @@ class QuizletParser {
             return;
         
         Searcher searcher = new Searcher(html);
+        int a, b;
+
+        // TODO: searchNextEnd
+        a = searcher.SearchNextEnd("<meta property=\"og:title\" content=\"");
+        if (a == -1) return;
+        b = searcher.SearchNext("\"");
+        if (b == -1) return;
+        Console.WriteLine(html.Substring(a, b - a));
         
         while (true) {
-            if (searcher.search_next("class=\"SetPageTerms-term\"") == -1) return;
+            if (searcher.SearchNext("class=\"SetPageTerms-term\"") == -1) return;
 
-            int a = searcher.search_next("lang-");
+            a = searcher.SearchNext("lang-");
             if (a == -1) return;
-            int b = searcher.search_next("\"");
+            b = searcher.SearchNext("\"");
             if (b == -1) return;
 
             string lang1_s = searcher.text.Substring(a, b - a);
             Language lang1 = parse_lang(lang1_s);
 
             a = b + 2;
-            b = searcher.search_next("<");
+            b = searcher.SearchNext("<");
             if (b == -1) return;
             string term1 = searcher.text.Substring(a, b - a);
 
-            a = searcher.search_next("lang-");
+            a = searcher.SearchNext("lang-");
             if (a == -1) return;
-            b = searcher.search_next("\"");
+            b = searcher.SearchNext("\"");
             if (b == -1) return;
 
             string lang2_s = searcher.text.Substring(a, b - a);
             Language lang2 = parse_lang(lang2_s);
 
             a = b + 2;
-            b = searcher.search_next("<");
+            b = searcher.SearchNext("<");
             if (b == -1) return;
             string term2 = searcher.text.Substring(a, b - a);
-            Console.WriteLine(term1, term2);
 
-            output.Add(new PracticeCard(new TextExpression2(term1, lang1), new TextExpression2(term2, lang2)));
+            output.AddCard(new PracticeCardModel(term1, lang1_s, term2, lang2_s));
         }
     }
 

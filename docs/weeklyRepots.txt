@@ -15,6 +15,23 @@ Danach muss ich noch eine geeignete "Internal-Representation" konzipieren,
 damit ich auf eine einfache Art und Weise auf die vorhin erwähnten Metadaten zugreifen kann.
 ---------------------------------------------------------KW 33---------------------------------------------------------
 
+---------------------------------------------------------KW 34---------------------------------------------------------
+In dieser Woche habe ich eine Render-API für die Windows-Konsole geschrieben.
+Sie kann alles, was ich benötige für diese Arbeit. Es gab Probleme mit der Abstraktion.
+Ich habe ein komplett neues Render-System implementiert und musste viele Fehler ausmerzen.
+Die API basiert auf Containers. Es gibt horizontalen und vertikalen Containers,
+die jeweils ein Layout- oder ein Text-Container sein können.
+ein Layout-Container hat kann wieder weitere Layout- oder Text-Containers beinhalten.
+Ein Text-Container kann nur Text beinhalten.
+
+Als zweits habe ich einen TOML-Parser ausgesucht.
+Ich möchte die Lern-Sets sowie die Settings im TOML-Format abspeichern.
+Daran werde ich noch nächste Woche arbeiten.
+Weiter steht noch an, ein Lernmodus zu programmieren.
+Da möchte ich auch wieder mit Abstraktion arbeiten, damit in Zukunft weitere Lern-Modi hinzugefügt werden können.
+---------------------------------------------------------KW 34---------------------------------------------------------
+
+
 
 Gemacht:
 - basic http request
